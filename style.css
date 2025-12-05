@@ -1,0 +1,96 @@
+/* Basic page layout */
+body{
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fffafc;
+  color: #222;
+  margin:0;
+  padding:0;
+  min-height:100vh;
+}
+
+/* container */
+.container{
+  max-width:900px;
+  margin:40px auto;
+  padding:20px;
+  text-align:center;
+}
+
+/* headings */
+h1{ color:#c2185b; font-size:36px; margin-bottom:6px; }
+.intro{ background:white; padding:18px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+
+/* gallery thumbnails */
+.gallery{ margin-top:28px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+.thumb{ width:260px; border-radius:12px; box-shadow:0 8px 22px rgba(0,0,0,0.08); }
+
+/* footer */
+.footer{ margin-top:40px; color:#b21860; font-size:20px; }
+
+/* play button */
+.play-btn{
+  display:inline-block;
+  margin:18px;
+  padding:12px 18px;
+  background:#ff7aa2;
+  color:white;
+  border:none;
+  border-radius:12px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+/* popup overlay */
+.popup{
+  position:fixed; inset:0; display:none; justify-content:center; align-items:center;
+  background:rgba(0,0,0,0.5); z-index:9999;
+}
+.popup-content{
+  background:white; padding:22px; border-radius:14px; max-width:360px; text-align:center;
+  box-shadow:0 18px 40px rgba(0,0,0,0.2);
+}
+
+/* falling hearts (small style) */
+.heart{ position:fixed; top:-60px; pointer-events:none; z-index:9999; transform-origin:center; }
+@keyframes fall{ 0%{transform:translateY(0) rotate(0deg); opacity:1;} 100%{transform:translateY(115vh) rotate(360deg); opacity:0;} }
+
+body {
+    background-image: url("images/tulips1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(5px);
+}
+
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.section-box {
+  background: rgba(255, 255, 255, 0.45);
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+}
+
