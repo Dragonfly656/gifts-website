@@ -9,23 +9,13 @@
 
 <body>
 
-    
-
-<script src="script.js"></script>
-
 <audio id="bg-music">
-    <source src="static/love.mp3" type="audio/mpeg">
+    <source src="/love.mp3" type="audio/mpeg">
 </audio>
 
 <button id="playBtn">🎵 Play Music</button>
 
-<script>
-document.getElementById("playBtn").addEventListener("click", () => {
-    const audio = document.getElementById("bg-music");
-    audio.play().catch(err => console.log(err));
-});
-</script>
-
+    
 
 <div id="popup" class="popup">
   <h2>Special Message 💗</h2>
@@ -217,9 +207,19 @@ function closePopup() {
 }
 </script>
 
+<script>
+document.getElementById("playBtn").addEventListener("click", () => {
+    const audio = document.getElementById("bg-music");
+    audio.play().catch(err => console.log(err));
+});
+</script>
+
+<script src="script.js"></script>
+
 
 </body>
 </html>
+
 
 
 
