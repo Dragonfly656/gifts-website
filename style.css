@@ -1,3 +1,32 @@
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* popup overlay */
+.popup{
+  position:fixed; inset:0; display:none; justify-content:center; align-items:center;
+  background:rgba(0,0,0,0.5); z-index:9999;
+}
+.popup-content{
+  background:white; padding:22px; border-radius:14px; max-width:360px; text-align:center;
+  box-shadow:0 18px 40px rgba(0,0,0,0.2);
+}
+
+
 /* Basic page layout */
 body{
   font-family: "Poppins", Arial, sans-serif;
@@ -40,15 +69,6 @@ h1{ color:#c2185b; font-size:36px; margin-bottom:6px; }
   cursor:pointer;
 }
 
-/* popup overlay */
-.popup{
-  position:fixed; inset:0; display:none; justify-content:center; align-items:center;
-  background:rgba(0,0,0,0.5); z-index:9999;
-}
-.popup-content{
-  background:white; padding:22px; border-radius:14px; max-width:360px; text-align:center;
-  box-shadow:0 18px 40px rgba(0,0,0,0.2);
-}
 
 /* falling hearts (small style) */
 .heart{ position:fixed; top:-60px; pointer-events:none; z-index:9999; transform-origin:center; }
@@ -62,23 +82,6 @@ body {
     backdrop-filter: blur(5px);
 }
 
-#popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-
-.popup-content {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-}
 
 .hidden {
     display: none;
@@ -93,4 +96,5 @@ body {
   max-width: 600px;
   margin: auto;
 }
+
 
