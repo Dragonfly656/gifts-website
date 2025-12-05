@@ -9,12 +9,22 @@
 
 <body>
 
-    <audio autoplay>
-  <source src="static/music/love.mp3" type="audio/mpeg">
-</audio>
-
+    
 
 <script src="script.js"></script>
+
+<audio id="bg-music">
+    <source src="images/love.mp3" type="audio/mpeg">
+</audio>
+
+<button id="playBtn">🎵 Play Music</button>
+
+<script>
+document.getElementById("playBtn").addEventListener("click", () => {
+    const audio = document.getElementById("bg-music");
+    audio.play().catch(err => console.log(err));
+});
+</script>
 
 
 <script>
@@ -74,12 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
     
- <button onclick="playMusic()" 
-        style="margin: 15px; padding:10px 20px; font-size:18px; border-radius:10px; background:#ff7aa2; color:white; border:none; cursor:pointer;">
-    🎵 Play Music
-</button>
-
-
 <div class="container">
     <h1>For Rasmalai 💕</h1>
 
@@ -223,6 +227,7 @@ function closePopup() {
 
 </body>
 </html>
+
 
 
 
