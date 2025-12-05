@@ -95,6 +95,17 @@ body {
   margin: auto;
 }
 
+.section {
+  margin-top: 40px;      /* space above */
+  margin-bottom: 40px;   /* space below */
+  padding: 20px;         /* inner padding */
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+}
+
+
+
 
 
 
