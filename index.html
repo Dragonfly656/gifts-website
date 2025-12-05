@@ -9,14 +9,13 @@
 
 <body>
 
+    <audio autoplay>
+  <source src="static/music/love.mp3" type="audio/mpeg">
+</audio>
+
+
 <script src="script.js"></script>
 
-<button onclick="playMusic()" 
-        style="margin: 15px; padding:10px 20px; font-size:18px; border-radius:10px; background:#ff7aa2; color:white; border:none; cursor:pointer;">
-    🎵 Play Music
-</button>
-
-<audio id="bgMusic" src="images/love.mp3" controls></audio>
 
 <script>
 function playMusic() {
@@ -77,6 +76,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // setTimeout(() => clearInterval(intervalId), 30000);
 });
 </script>
+    
+ <button onclick="playMusic()" 
+        style="margin: 15px; padding:10px 20px; font-size:18px; border-radius:10px; background:#ff7aa2; color:white; border:none; cursor:pointer;">
+    🎵 Play Music
+</button>
 
 
 <div class="container">
@@ -213,8 +217,16 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
+<script>
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+</script>
+
+
 
 </body>
 </html>
+
 
 
