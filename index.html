@@ -9,8 +9,21 @@
 
 <body>
 
-
 <script src="script.js"></script>
+
+<button onclick="playMusic()" 
+        style="margin: 15px; padding:10px 20px; font-size:18px; border-radius:10px; background:#ff7aa2; color:white; border:none; cursor:pointer;">
+    🎵 Play Music
+</button>
+
+<audio id="bgMusic" src="images/love.mp3" controls></audio>
+
+<script>
+function playMusic() {
+    let audio = document.getElementById('bgMusic');
+    audio.play();
+}
+</script>
 
 <div id="popup" class="hidden">
   <div class="popup-content">
@@ -63,22 +76,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Optional: stop after some time (uncomment to auto-stop after 30s)
   // setTimeout(() => clearInterval(intervalId), 30000);
 });
-</script>
-
-
-
-<button onclick="playMusic()" 
-        style="margin: 15px; padding:10px 20px; font-size:18px; border-radius:10px; background:#ff7aa2; color:white; border:none; cursor:pointer;">
-    🎵 Play Music
-</button>
-
-<audio id="bgMusic" src="images/love.mp3" controls></audio>
-
-<script>
-function playMusic() {
-    let audio = document.getElementById('bgMusic');
-    audio.play();
-}
 </script>
 
 
@@ -219,4 +216,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
+
 
