@@ -1,29 +1,3 @@
-.popup {
-  display: block; /* show it */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.85);
-  padding: 20px;
-  border-radius: 20px;
-  max-width: 350px;
-  text-align: center;
-  z-index: 9999;  /* VERY IMPORTANT */
-  backdrop-filter: blur(10px);
-}
-
-.popup button {
-  margin-top: 15px;
-  padding: 8px 16px;
-  border-radius: 10px;
-  border: none;
-  background: #ff6b81;
-  color: white;
-  cursor: pointer;
-}
-
-
 /* Basic page layout */
 body{
   font-family: "Poppins", Arial, sans-serif;
@@ -33,6 +7,33 @@ body{
   padding:0;
   min-height:100vh;
 }
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centers properly */
+  background: rgba(255, 255, 255, 0.85);
+  padding: 25px 35px;
+  width: 300px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  z-index: 9999;
+  backdrop-filter: blur(10px);
+  display: block; /* show popup */
+}
+
+.popup button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #ff6b81;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
 
 /* container */
 .container{
@@ -93,6 +94,7 @@ body {
   max-width: 600px;
   margin: auto;
 }
+
 
 
 
